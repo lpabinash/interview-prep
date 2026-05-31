@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import type { Chapter, ChapterMeta, TocHeading, Season } from '@/types/chapter'
 
-const TS_CONTENT_ROOT = path.join(process.cwd(), '..', 'typescript-chapters')
+const TS_CONTENT_ROOT = path.join(process.cwd(), 'typescript-chapters')
 
 const TS_CHAPTER_DIR_RE = /^Chapter\s+(\d+)\s+(.+)$/
 

@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import type { Chapter, ChapterMeta, TocHeading, Season } from '@/types/chapter'
 
-const CONTENT_ROOT = path.join(process.cwd(), '..', 'javascript-chapters')
+const CONTENT_ROOT = path.join(process.cwd(), 'javascript-chapters')
 
 // Concept folder name to normalized display title
 const CONCEPT_TITLE_MAP: Record<string, string> = {

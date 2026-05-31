@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import type { Chapter, ChapterMeta, TocHeading, Season } from '@/types/chapter'
 
-const FSD_CONTENT_ROOT = path.join(process.cwd(), '..', 'fsd-chapters')
+const FSD_CONTENT_ROOT = path.join(process.cwd(), 'fsd-chapters')
 
 // Ordered list of categories with display names
 const FSD_CATEGORIES: { dir: string; title: string; season: 1 | 2 | 3; seasonLabel: string }[] = [

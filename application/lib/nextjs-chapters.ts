@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import type { Chapter, ChapterMeta, TocHeading, Season } from '@/types/chapter'
 
-const NEXTJS_CONTENT_ROOT = path.join(process.cwd(), '..', 'nextjs-chapters')
+const NEXTJS_CONTENT_ROOT = path.join(process.cwd(), 'nextjs-chapters')
 
 const NEXTJS_CHAPTER_DIR_RE = /^Chapter\s+(\d+)\s+(.+)$/
 

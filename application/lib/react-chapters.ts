@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import type { Chapter, ChapterMeta, TocHeading, Season } from '@/types/chapter'
 
-const REACT_CONTENT_ROOT = path.join(process.cwd(), '..', 'react-chapters')
+const REACT_CONTENT_ROOT = path.join(process.cwd(), 'react-chapters')
 
 // Regex to parse React chapter directory names
 // Matches: "Chapter 01 Title" (no dash, variable whitespace)

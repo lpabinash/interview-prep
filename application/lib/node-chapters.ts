@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import type { Chapter, ChapterMeta, TocHeading, Season } from '@/types/chapter'
 
-const NODE_CONTENT_ROOT = path.join(process.cwd(), '..', 'nodejs-chapters')
+const NODE_CONTENT_ROOT = path.join(process.cwd(), 'nodejs-chapters')
 
 function slugify(text: string): string {
   return text

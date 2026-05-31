@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import type { Chapter, ChapterMeta, TocHeading, Season } from '@/types/chapter'
 
-const DSA_CONTENT_ROOT = path.join(process.cwd(), '..', 'dsa-chapters')
+const DSA_CONTENT_ROOT = path.join(process.cwd(), 'dsa-chapters')
 
 // Matches: "1-warm-up", "10-tree", etc.
 const DSA_DIR_RE = /^(\d+)-(.+)$/
