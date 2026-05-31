@@ -4,7 +4,7 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const JS_CONTENT_ROOT = path.join(__dirname, '..', '..', 'javascript-chapters')
+const JS_CONTENT_ROOT = path.join(__dirname, '..', 'javascript-chapters')
 const CONTENT_ROOT = JS_CONTENT_ROOT
 
 const CHAPTER_DIR_RE = /^Chapter\s+(S(\d)\s+)?(\d+)\s*[-–]\s*(.+)$/
@@ -111,7 +111,7 @@ if (fs.existsSync(conceptsDir)) {
 const outPath = path.join(__dirname, '..', 'public', 'search-index.json')
 
 // ----- React chapters -----
-const REACT_CONTENT_ROOT = path.join(__dirname, '..', '..', 'react-chapters')
+const REACT_CONTENT_ROOT = path.join(__dirname, '..', 'react-chapters')
 const REACT_CHAPTER_DIR_RE = /^Chapter\s+(\d+)\s+(.+)$/
 
 if (fs.existsSync(REACT_CONTENT_ROOT)) {
@@ -163,7 +163,7 @@ if (fs.existsSync(REACT_CONTENT_ROOT)) {
 }
 
 // ----- Node.js chapters -----
-const NODE_CONTENT_ROOT = path.join(__dirname, '..', '..', 'nodejs-chapters')
+const NODE_CONTENT_ROOT = path.join(__dirname, '..', 'nodejs-chapters')
 const NODE_CHAPTER_DIR_RE = /^Chapter\s+(S(\d)\s+)?(\d+)/
 
 if (fs.existsSync(NODE_CONTENT_ROOT)) {
@@ -212,7 +212,7 @@ if (fs.existsSync(NODE_CONTENT_ROOT)) {
 }
 
 // ----- DSA chapters -----
-const DSA_CONTENT_ROOT = path.join(__dirname, '..', '..', 'dsa-chapters')
+const DSA_CONTENT_ROOT = path.join(__dirname, '..', 'dsa-chapters')
 const DSA_DIR_RE = /^(\d+)-(.+)$/
 
 function titleCase(slug) {
@@ -281,7 +281,7 @@ if (fs.existsSync(DSA_CONTENT_ROOT)) {
 }
 
 // ----- FSD chapters -----
-const FSD_CONTENT_ROOT = path.join(__dirname, '..', '..', 'fsd-chapters')
+const FSD_CONTENT_ROOT = path.join(__dirname, '..', 'fsd-chapters')
 const FSD_CATEGORIES = [
   { dir: 'Security', title: 'Security' },
   { dir: 'Networking', title: 'Networking' },
@@ -353,7 +353,7 @@ if (fs.existsSync(FSD_CONTENT_ROOT)) {
 }
 
 // --- TypeScript chapters ---
-const TS_CONTENT_ROOT = path.join(__dirname, '..', '..', 'typescript-chapters')
+const TS_CONTENT_ROOT = path.join(__dirname, '..', 'typescript-chapters')
 const TS_DIR_RE = /^Chapter\s+(\d+)\s+(.+)$/
 
 if (fs.existsSync(TS_CONTENT_ROOT)) {
@@ -386,7 +386,7 @@ if (fs.existsSync(TS_CONTENT_ROOT)) {
 }
 
 // --- Next.js chapters ---
-const NEXTJS_CONTENT_ROOT = path.join(__dirname, '..', '..', 'nextjs-chapters')
+const NEXTJS_CONTENT_ROOT = path.join(__dirname, '..', 'nextjs-chapters')
 
 if (fs.existsSync(NEXTJS_CONTENT_ROOT)) {
   const nextDirs = fs.readdirSync(NEXTJS_CONTENT_ROOT, { withFileTypes: true })
